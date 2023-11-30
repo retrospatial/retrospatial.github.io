@@ -1,0 +1,10 @@
+*.gem
+.bundle
+.sass-cache
+.jekyll-cache
+_site
+Gemfile.lock
+
+
+assets/images/animorphs.gif
+assets/images/fandometrics.gif

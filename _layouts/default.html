@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>florina sutanto</title>
+
+    {% if site.description %}<meta name="description" content="{{ site.description }}">{% endif %}  
+
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | absolute_url }}?{{ site.time | date: '%s%N' }}">
+
+    <link rel="shortcut icon" href="/assets/images/icon.png">
+
+    {%- if jekyll.environment == 'production' and site.google_analytics -%}
+      {%- include google-analytics.html -%}
+    {%- endif -%}
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/menu.js"></script>
+
+  </head>
+  <body>
+
+    {% if page.layout == 'home' %}
+      <a href="#main" class="skip-navigation">
+        Skip to list of posts
+      </a>
+    {% else %}
+      <a href="#main" class="skip-navigation">
+        Skip to content
+      </a>
+    {% endif %}
+
+    {{ content }}
+
+    {% unless site.hide_credits %}
+      <aside class="site-credits">
+        <!-- <p>
+          <small>© florina sutanto</small>
+        </p> -->
+        <p>
+          <small>built with <a href="https://github.com/retrospatial/retrospatial.github.io">Jekyll</a></small>
+        </p>
+      </aside>
+    {% endunless %}
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="assets/js/menu.js"></script>
+
+  </body>
+</html>

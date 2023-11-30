@@ -1,0 +1,96 @@
+.site-masthead {
+  box-sizing: border-box;
+  position: relative;
+  text-align: left;
+  padding-left: 3rem;
+  margin-top: -5px;
+  width: 100vw;
+  min-height: 100vh;
+  line-height: 1.2; 
+  z-index: 1;
+
+  @media (min-width: $on-desktop) {
+    padding-top: 0;
+  }
+
+  @media (max-width: $on-laptop) {
+    padding-top: 2rem;
+  }
+
+  @media (max-width: $on-tablet) {
+    padding-top: 3rem;
+  }
+
+  @media (max-width: $on-bigphone) {
+    padding-top: 4rem;
+  }
+}
+
+.site-masthead h1 {
+  text-align: left;
+  margin-bottom: 0;
+  margin-top: 1em;
+  padding: 0 2rem;
+
+  @media (min-width: $on-desktop) {
+    font-size: 5em;
+  }
+
+  @media (max-width: $on-laptop) {
+    font-size: 4em; 
+  }
+
+  @media (max-width: $on-tablet) {
+    font-size: 2em; 
+  }
+
+  @media (max-width: $on-bigphone) {
+    font-size: 1em; 
+  }
+}
+
+.site-masthead h2 {
+  width: 67%;
+  text-align: left;
+  margin: 0;
+  padding: 0 2rem;
+
+  @media (min-width: $on-desktop) {
+    font-size: 2em;
+  }
+
+  @media (max-width: $on-laptop) {
+    font-size: 1.5em; 
+  }
+
+  @media (max-width: $on-tablet) {
+    font-size: 1em; 
+  }
+
+  @media (max-width: $on-bigphone) {
+    font-size: 0.75em; 
+  }
+}
+
+.site-masthead h3 {
+  color: #000000;
+  text-align: left;
+  margin: 0;
+  padding: 0 2rem;
+
+  @media (min-width: $on-desktop) {
+    font-size: 1.5em;
+  }
+
+  @media (max-width: $on-laptop) {
+    font-size: 1em; 
+  }
+
+  @media (max-width: $on-tablet) {
+    font-size: 0.75em; 
+  }
+
+  @media (max-width: $on-bigphone) {
+    font-size: 0.5em; 
+  }
+}

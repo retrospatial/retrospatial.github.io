@@ -1,0 +1,342 @@
+/* Global Styles */
+body {
+  background: $brand-color;
+  color: $text-color;
+  font-family: $font-family;
+  font-size: 1.3125em;
+  line-height: 1.5;
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 3em;
+  margin: .5em auto;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 1em auto;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: 1.3333em auto;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.25em;
+  font-style: italic;
+  margin: 1.875em auto;
+  text-align: center;
+}
+
+h5 {
+  font-size: 1em;
+  font-style: italic;
+  margin: 2em auto;
+  text-align: center;
+}
+
+h6 {
+  font-size: .875em;
+  font-style: italic;
+  margin: 2.25em auto;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+/* Link Styles */
+a {
+  color: #000000;
+}
+
+/* Blockquote Styles */
+blockquote {
+  margin: 2em auto;
+  opacity: .8;
+  > * {
+    padding: 0 3em;
+  }
+}
+
+/* Image Styles */
+img {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  margin: 2em auto;
+}
+
+figure img {
+  margin: 2em auto 1em;
+}
+
+figcaption {
+  font-size: .875em;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 2em;
+  opacity: .7;
+}
+
+/* Container Styles */
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container,
+.text-container {
+  max-width: 30vw;
+  width: 100%;
+  height: auto;
+  padding: 0 3rem;
+  margin: 1em auto; /* Adjust the margin for spacing */
+}
+
+/* Use media query to change layout on tablet-sized screens */
+@media (max-width: $on-tablet) {
+  .image-container {
+    order: 1; /* Move image container to the top */
+  }
+}
+
+
+.text-container h3 {
+  font-size: 2rem;
+  margin: 0; 
+  text-align: center;
+}
+
+.text-container p {
+  margin: 0; 
+  text-align: center;
+  
+}
+
+.text-container code {
+  display: inline-block;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+  font-size: 0.7em;
+  font-family: "Source Code Pro", monospace;
+  background-color: #EFEFEF;
+  padding: 0.25em 0.5em;
+  border-radius: 8px;
+  max-width: 35vw;
+
+  @media (min-width: $on-desktop) {
+    font-size: 0.7em;
+  }
+
+  @media (max-width: $on-laptop) {
+    font-size: 0.7em; 
+  }
+
+  @media (max-width: $on-tablet) {
+    font-size: 0.5em; 
+  }
+
+  @media (max-width: $on-bigphone) {
+    font-size: 0.5em; 
+  }
+}
+
+.text-container .code-1 {
+  color: #FF3F82;
+}
+
+.text-container .code-2 {
+  color: #3F45FF;
+}
+
+.text-container .code-3 {
+  color: #3F82FF;
+}
+
+.text-container .code-4 {
+  color: #7C3FFF;
+}
+
+.text-container .code-5 {
+  color: #FF7C3F;
+}
+
+.text-container .code-6 {
+  color: #ff3f55;
+}
+
+
+.content-container a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  opacity: 1;
+  transition: opacity 0.3s ease; 
+}
+
+.content-container a:hover,
+.content-container a:hover ~ div {
+  opacity: 0.6;
+}
+
+.desc {
+  font-size: 1.5em;
+  padding-bottom: 2em;;
+}
+
+
+/* Styles for Specific Sections */
+.home {
+  max-width: 80%;
+  align-items: center;
+  margin: auto; 
+  padding: 2em 1em;
+}
+
+.projects-title {
+  font-family: Nabla;
+  font-size: 3em;
+  text-align: center;
+  font-palette: --projects;
+}
+
+.category {
+  color: #044727c5;
+}
+
+@font-palette-values --projects { 
+  font-family: 'Nabla', 'Nova Square';
+  base-palette: 2;
+}
+
+.scraps-title {
+  font-family: Nabla;
+  font-size: 3em;
+  text-align: center;
+  font-palette: --scraps;
+}
+
+@font-palette-values --scraps { 
+  font-family: 'Nabla', 'Nova Square';
+  base-palette: 1;
+}
+
+/* Post Date Styles */
+.post-date {
+  color: $muted-text-color;
+  display: block;
+  font-size: .825em;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+/* Site Credits Styles */
+.site-credits {
+  margin: 0 auto 2em;
+  padding: 0 2em;
+  text-align: center;
+}
+
+/* Skip Navigation Styles */
+.skip-navigation {
+  background: $brand-color;
+  border: 1px dashed transparent;
+  display: block;
+  font-size: .875em;
+  font-weight: 700;
+  margin-top: -2.625rem;
+  padding: .5rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:hover,
+  &:focus {
+    background: lighten($brand-color, 2.5%);
+    border-color: $text-color;
+    margin-top: 0;
+  }
+}
+
+/* Resume and Icon Styles */
+.resume {
+  color: #ffffff;
+  font-weight: bolder;
+  text-decoration: none;
+  background-color: #044727;
+  padding: 0.3em 0.2em;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+.resume:hover {
+  background-color: transparent; 
+  color: #044727;
+}
+
+
+.icon {
+  color: #044727;
+}
+
+// RESPONSIVENESS
+
+// heading
+
+@media (min-width: $on-desktop) {
+  .text-container h3, .desc {
+  font-size: 1.5em;
+  }
+}
+
+@media (max-width: $on-laptop) {
+  .text-container h3, .desc {
+  font-size: 1.5em; 
+  }
+}
+
+@media (max-width: $on-tablet) {
+  .text-container h3, .desc {
+  font-size: 1em; 
+  }
+}
+
+@media (max-width: $on-bigphone) {
+  .text-container h3, .desc {
+  font-size: 1em; 
+  }
+}
+
+// texts
+
+@media (min-width: $on-desktop) {
+  p, .category {
+  font-size: 1em;
+  }
+}
+
+@media (max-width: $on-laptop) {
+  p, .category {
+    font-size: 1em;
+    }
+  }
+
+@media (max-width: $on-tablet) {
+  p, .category {
+    font-size: 0.75em;
+    }
+  }
+
+@media (max-width: $on-bigphone) {
+  p, .category {
+    font-size: 0.75em;
+    }
+  }
