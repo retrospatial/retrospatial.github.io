@@ -1,4 +1,4 @@
-import{s as g,n as o}from"../chunks/scheduler.BpGeUnIB.js";import{S as v,i as b,e as d,s as I,t as w,c as u,g as p,a as y,h as x,b as h,d as n,f as l}from"../chunks/index.BRYuX1pY.js";function _(f){let a,c='<img src="/assets/images/frame.svg" alt="me"/>',i,t,m=`<h1>hi! i&#39;m flo</h1> <p class="about-text">(also this site is under construction sozz)
+import{s as g,n as o}from"../chunks/scheduler.BvLojk_z.js";import{S as v,i as b,e as d,s as I,t as w,c as u,g as p,a as y,h as x,b as h,d as n,f as l}from"../chunks/index.WhMknJ-m.js";function _(f){let a,c='<img src="/assets/images/frame.svg" alt="me"/>',i,t,m=`<h1>hi! i&#39;m flo</h1> <p class="about-text">(also this site is under construction sozz)
         <br/><br/>
         I’m a writer, developer, and recent graduate of Wesleyan University.
 
