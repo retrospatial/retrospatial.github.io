@@ -72,3 +72,14 @@
 @utility border-outset-small {
 	border: 1px outset var(--color-white);
 }
+
+/* window close button — the X is drawn as geometry rather than a text glyph.
+   a font glyph sits on the baseline, so its ink lands ~1.3px below the box
+   centre and snaps differently per device pixel ratio; an 8px mark in a 10px
+   content box is exactly 1px from every edge on any display */
+@utility close-glyph {
+	background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%208%208'%3E%3Cpath%20d='M1.25%201.25L6.75%206.75M6.75%201.25L1.25%206.75'%20stroke='black'%20stroke-width='1.25'%20fill='none'%20stroke-linecap='square'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 8px 8px;
+}

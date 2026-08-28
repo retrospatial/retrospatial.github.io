@@ -12,7 +12,6 @@
 	interface Props {
 		class?: string;
 		color?: string;
-		/** override when the window should hug its content, e.g. "w-fit" */
 		width?: string;
 		scrollbarTrack?: string;
 		scrollbarThumb?: string;
@@ -25,10 +24,9 @@
 	<div class="relative w-full">
 		<header class="{color} top-0 h-6 w-full">
 			<div
-				class="border-outset-small absolute right-2 top-1/2 flex h-3 w-3 -translate-y-1/2 transform items-center justify-center border bg-white text-black text-sm font-mono pb-px"
-			>
-				x
-			</div>
+				class="border-outset-small close-glyph absolute top-1/2 right-2 h-3 w-3 -translate-y-1/2 transform border bg-white"
+				aria-hidden="true"
+			></div>
 		</header>
 	</div>
 	<div

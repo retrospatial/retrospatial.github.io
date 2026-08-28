@@ -34,6 +34,13 @@ work:
     role: Contributor
     tags: [Story, Design, Data]
     cover: mow.mp4
+  - title: Why Are Electricity Bills So High?
+    desc: Rising demand from data centers is frequently cited for rising energy costs, but is that the real reason why?
+    link: https://electricitycosts.citizencodex.com/
+    source: Citizen Codex
+    role: Contributor
+    tags: [Editor, Dev]
+    cover: electricity.webp
   - title: Confronting the Global Cancer Crisis
     desc: How Brazil's response to noncommunicable diseases can guide a global prevention strategy.
     link: https://impact.vitalstrategies.org/

@@ -57,8 +57,8 @@
 		}
 
 		&::after {
-			@apply border-outset-small absolute top-3 right-2 flex h-3 w-3 -translate-y-1/2 items-center justify-center bg-white font-mono text-sm text-black;
-			content: 'x';
+			@apply border-outset-small close-glyph absolute top-3 right-2 h-3 w-3 -translate-y-1/2 bg-white;
+			content: '';
 		}
 
 		p {
