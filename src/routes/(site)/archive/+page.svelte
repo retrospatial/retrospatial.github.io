@@ -27,7 +27,7 @@
 			<div class="flex flex-col gap-4">
 				<div class="flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:justify-between">
 					<h2 class="heading-sm mb-0">{item.title}</h2>
-					<time class="body-xl" datetime={item.date}>{formatMonth(item.date)}</time>
+					<time class="body-lg" datetime={item.date}>{formatMonth(item.date)}</time>
 				</div>
 
 				<p class="body-md">{@html md(item.desc)}</p>
@@ -40,6 +40,22 @@
 							class="md:border-outset border-outset-small"
 						/>
 					{/each}
+				</div>
+
+				{#if item.desc_extra}
+					<p class="body-md">{@html md(item.desc_extra)}</p>
+				{/if}
+
+				<div class="grid grid-cols-2 gap-2 md:gap-4">
+					{#if item.imgs_extra}
+						{#each item.imgs_extra as img, i}
+							<Image
+								src="archive/{img}"
+								alt="{item.title} design, screenshot {i + 1}"
+								class="md:border-outset border-outset-small"
+							/>
+						{/each}
+					{/if}
 				</div>
 			</div>
 		{/each}

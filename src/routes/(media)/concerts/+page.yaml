@@ -12,28 +12,28 @@ concerts:
         date: '2026-04-18'
         venue: roadrunner
         city: boston
-        poster: tldp.jpg
+        poster: tldp.webp
         support:
           - florence road
       - artist: lcd soundsystem
         date: '2026-05-01'
         venue: roadrunner
         city: boston
-        poster: lcd.jpg
+        poster: lcd.webp
         support:
           - exek
       - artist: yumi zouma
         date: '2026-05-04'
         venue: the sinclair
         city: cambridge
-        poster: yumi.jpeg
+        poster: yumi.webp
         support:
           - ducks ltd
       - artist: underscores
         date: '2026-06-14'
         venue: royale
         city: boston
-        poster: underscores.jpeg
+        poster: underscores.webp
         support:
           - umru
       - artist: metric
@@ -50,11 +50,17 @@ concerts:
         city: boston
         poster: slayyyter.webp
         support:
+      - artist: half alive
+        date: '2026-11-04'
+        venue: the sinclair
+        city: cambridge
+        poster: halfalive.webp
+        support:
       - artist: olivia rodrigo
         date: '2026-12-07'
         venue: climate pledge arena
         city: seattle
-        poster: olivia.jpg
+        poster: olivia.webp
         support:
 
   - year: 2025

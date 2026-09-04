@@ -10,6 +10,12 @@ archive:
       - site4_1.webp
       - site4_2.webp
       - site4_3.webp
+    desc_extra: >
+      test
+    imgs_extra:
+      - site4_og_1.webp
+      - site4_og_2.webp
+      - site4_og_3.webp
   - title: Placeholder
     date: 2025-01
     desc: test
